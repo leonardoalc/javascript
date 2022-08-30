@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistemas de multas</h1>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <p>Sua velocidade era de: <span id="vel"></span>Km/h</p>
+    <span class="resposta"></span>
+
+    <h1>Sistema de Nacionalidade</h1>
+    <p>Em qual país você nasceu: <input type="text" placeholder="Digite seu país" id="txtpais"> <input type="button" value="Verificar" onclick="nacionalidade()"></p>
+    <div class="resposta"></div>
+
+    <script>
+        function calcular() {
+            var veltxt = window.document.getElementById("txtvel")
+            var velnum = Number(veltxt.value)
+            var resvel = window.document.getElementById("vel")
+            resvel.innerText = velnum
+            if (velnum > 60) {
+                res_multa = window.document.getElementsByClassName("resposta")[0]
+                res_multa.innerText = "Você será multado!"
+            } else {
+                res_multa = window.document.getElementsByClassName("resposta")[0]
+                res_multa.innerText = "Você não será multado!"
+            } 
+        }
+    </script>
+    <script>
+        function nacionalidade() {
+            var nacionalidadevar = window.document.getElementById("txtpais")
+            var nacio = String(nacionalidadevar)
+            if (nacio === "Brasil") {
+                res_nacio = window.document.getElementsByClassName("resposta")[1]
+                res_nacio.innerHTML = "Você é Brasileiro!!&#1F1E7;"
+            } else {
+                res_nacio = window.document.getElementsByClassName("resposta")[1]
+                res_nacio.innerHTML = "Você não é Brasileiro!"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Monte seu celular</h1>
+    </header>
+    <main>
+        <div id="opcoes">
+            Marca <br>
+            <select name="marca" id="marca">
+                <option value="Samsung">Samsung</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Apple">Apple</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Nokie">Nokia</option>
+                <option value="none" selected>Não selecionado</option>
+            </select><br>Armazenamento<br>
+            <select name="ssd" id="ssd">
+                <option value="32GB">32 GB</option>
+                <option value="64GB">64 GB</option>
+                <option value="128GB">128 GB</option>
+                <option value="256GB">256 GB</option>
+                <option value="none" selected>Não selecionado</option>
+            </select><br>Memória Ram<br>
+            <select name="ram" id="ram">
+                <option value="2GB">2 GB</option>
+                <option value="4GB">4 GB</option>
+                <option value="6GB">6 GB</option>
+                <option value="8GB">8 GB</option>
+                <option value="16GB">16 GB</option>
+                <option value="none" selected>Não selecionado</option>
+            </select><br>Câmera Traseira<br>
+            <select name="back" id="back">
+                <option value="32Mp">32 Mp</option>
+                <option value="64Mp">64 Mp</option>
+                <option value="64Mp + 16Mp">64 Mp + 16 Mp</option>
+                <option value="64Mp + 16Mp + 8Mp">64 Mp + 16 Mp + 8 Mp</option>
+                <option value="128Mp + 32Mp + 16Mp">128 Mp + 32 Mp + 16 Mp</option>
+                <option value="none" selected>Não selecionado</option>
+            </select><br>Câmera Frontal<br>
+            <select name="front" id="front">
+                <option value="8Mp">8 Mp</option>
+                <option value="16Mp">16 Mp</option>
+                <option value="32Mp">32 Mp</option>
+                <option value="none" selected>Não selecionado</option>
+            </select><br>
+            <button type="submit" onclick="celular()">Confirmar</button>
+        </div>
+        <div id="result">
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

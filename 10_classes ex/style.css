@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: rgba(47, 179, 161, 0.61);
+}
+
+header {
+    color: white;
+
+    text-align: center;
+    text-shadow: 1px 2px 9px rgba(0, 0, 0, 0.555);
+
+    margin-top: 10%;
+}
+
+main {
+    background-color: white;
+
+    width: 500px;
+
+    margin: 15px auto auto auto;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.356);
+}
+
+select {
+    margin-top: 3px;
+    margin-bottom: 15px;
+
+    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.356);
+}
+button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.356);
+}
+#opcoes select {
+    width: 160px;
+    border-radius: 10px;
+}

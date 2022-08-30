@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java do script</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            font-size: 1.3em;
+            width: 100px;
+        }
+        span {
+            font-size: 1.3em;
+        }
+        p {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <p>Resultado: <span id="res"></span></p>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById("txtn1")
+            var tn2 = window.document.getElementById("txtn2")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            n3 = n1 + n2
+            var res = window.document.getElementById("res")
+            res.innerText = n3
+        }
+    </script>
+</body>
+</html>
