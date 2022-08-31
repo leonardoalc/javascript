@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip calculator</title>
+</head>
+<body>
+    <header><h1>Tip Calculator</h1></header>
+    <main>
+        <div>
+            <label for="valor">Total a pagar:</label>
+            <input type="number" id="valor" placeholder="Digite o total" min="0" max="10000">
+        </div>
+        <div>
+            <label for="slider">Gorjeta:</label>
+            <input type="range" id="slider" min="0" max="50" value="0" step="5">
+            <span id="valuee">0%</span>
+        </div>
+        <div>
+            <div class="tot">R$<span id="tot_sem" class="tt"></span></div>
+            <div class="tot">R$<span id="tot_com" class="tt"></span></div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
