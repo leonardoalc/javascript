@@ -24,6 +24,7 @@ main {
 
 }
 #item {
+    flex: 80%;
     width: 80%;
     padding: 20px;
     font-size: 1.3em;
