@@ -2,5 +2,5 @@
  Curso de Javascript
  
  ### Principais Projetos
- <a href="https://leonardoalc.github.io/javascript/7_array ex">Lista personalizada</a><br>
- <a href="https://leonardoalc.github.io/javascript/11_projeto-gorjeta/">Tip calculator</a>
+ <a href="https://leonardoalc.github.io/javascript/7_array ex" target="_blank">Lista personalizada</a><br>
+ <a href="https://leonardoalc.github.io/javascript/11_projeto-gorjeta/" target="_blank">Tip calculator</a>
