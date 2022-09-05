@@ -1,0 +1,29 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#tempo {
+    display: flex;
+    justify-content: center;
+    margin: 230px auto;
+    width: 750px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.356);
+}
+.hms {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 8em;
+
+    box-shadow: inset 0px 0px 12px 1px #0000003d;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    width: 200px;
+
+    margin: 5px 20px;
+}
+.dpt {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 8em;
+}
