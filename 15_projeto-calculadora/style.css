@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: "Calculadora";
+    src: url("font/Calculator.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --fontPadrao: "Montserrat", Helvetica, sans-serif;
+    --fontEspecial: "Calculadora", Helvetica, sans-serif;
+
+    --cor0: #121212;
+    --cor1: #1a1a1a;
+    --cor2: #00D2D8;
+}
+html, body {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: var(--fontPadrao);
+
+    background-color: var(--cor0);
+}
+main {
+    margin-top: 25vh;
+}
+#calc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 32px 273px;
+    grid-gap: 10px;
+
+    background-color: var(--cor1);
+
+    border: 1px solid white;
+    
+    width: 220px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px;
+}
+#title-calc {
+    display: flex;
+    align-items: center;
+}
+#title-calc > h1 {
+    font-size: 1.2em;
+    font-style: normal;
+
+    color: var(--cor2);
+}
+#operacao-atual {
+    display: flex;
+
+    color: var(--cor2);
+
+    border: 1px solid white;
+
+    justify-content: end;
+    align-items: center;
+
+    font-size: 1.8em;
+    font-family: var(--fontEspecial), sans-serif;
+}
+#botoes {
+    display: grid;
+
+    grid-template-columns: 53px 53px 53px 53px;
+    grid-template-rows: 53px 53px 53px 53px;
+    grid-gap: 1px;
+
+    justify-content: center;
+}
+.botao-calc {
+    font-size: 1.1em;
+
+    border-radius: 7px;
+
+    color: var(--cor2);
+    
+    background-color: var(--cor1);
+
+    border: 1px solid white;
+
+    transition: .2s;
+}
+.botao-calc:active {
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.315);
+    font-size: 1em;
+}
+footer {
+    display: flex;
+
+    gap: 5px;
+
+    margin-top: 25vh;
+
+    color: var(--cor2);
+
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    color: var(--cor2);
+    
+    text-decoration: none;
+}
+footer::after {
+    content: "\1F517";
+}
+footer a:hover {
+    text-decoration: underline;
+}

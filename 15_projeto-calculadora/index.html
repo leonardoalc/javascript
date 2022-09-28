@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div id="calc">
+            <div id="title-calc">
+                <h1>Calculadora</h1>
+            </div>
+            <div id="operacao-atual">
+            </div>
+            <div id="botoes">
+                <button class="botao-calc" onclick="fullClear()" style="grid-column-start: 1; grid-column-end: 3;">C</button>
+                <button class="botao-calc" onclick="back()">DEL</button>
+                <button class="botao-calc" onclick="insert('/')">/</button>
+                <button class="botao-calc" onclick="insert('7')">7</button>
+                <button class="botao-calc" onclick="insert('8')">8</button>
+                <button class="botao-calc" onclick="insert('9')">9</button>
+                <button class="botao-calc" onclick="insert('*')">*</button>
+                <button class="botao-calc" onclick="insert('4')">4</button>
+                <button class="botao-calc" onclick="insert('5')">5</button>
+                <button class="botao-calc" onclick="insert('6')">6</button>
+                <button class="botao-calc" onclick="insert('-')">-</button>
+                <button class="botao-calc" onclick="insert('1')">1</button>
+                <button class="botao-calc" onclick="insert('2')">2</button>
+                <button class="botao-calc" onclick="insert('3')">3</button>
+                <button class="botao-calc" onclick="insert('+')">+</button>
+                <button class="botao-calc" onclick="insert('0')">0</button>
+                <button class="botao-calc" onclick="insert('.')">.</button>
+                <button class="botao-calc" style="grid-column-start: 3; grid-column-end: 5;" onclick="resolver()"> =</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Desenvolvido por <a href="https://github.com/leonardoalc">Sandro Leonardo</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
