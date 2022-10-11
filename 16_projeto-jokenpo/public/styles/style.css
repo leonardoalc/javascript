@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: "Game-font";
+    src: url("../../fonts/04B_30__.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes movimentarPlayer {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 100px;
+    }
+}
+@keyframes movimentarNpc {
+    from {
+        margin-left: 98px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+:root {
+    --font-game: "Game-font", sans-serif;
+}
+* {
+    font-family: "Montserrat", Arial, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex;
+    
+    background-color: #753DC6;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 70px;
+    max-width: 1600px;
+}
+header > img {
+    width: 70px;
+    height: 70px;
+}
+#container-main {
+    height: 85vh;
+    max-width: 1600px;
+}
+#container-placar {
+    width: 500px;
+    margin: 20px auto;
+
+    text-align: center;
+
+    font-size: 2.5em;
+    font-family: var(--font-game);
+}
+#player-score {
+    color: #00baff;
+    margin-right: 50px;
+    
+    font-family: var(--font-game);
+} 
+#npc-score {
+    color: #ff0000;
+
+    margin-left: 50px;
+    
+    font-family: var(--font-game);
+}
+#result-txt {
+    margin-bottom: 20px;
+    
+    font-family: var(--font-game);
+}
+main {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 410px;
+    grid-gap: 100px;
+
+    width: 500px;
+
+    background-color: white;
+    background-image: url(../../images/arena2.png);
+
+    margin: 30px auto;
+}
+#player-side {
+    display: grid;
+    grid-gap: 50px;
+}
+#npc-side {
+    display: grid;
+    grid-gap: 50px;
+}
+.player-icons, .npc-icons {
+    height: 100px;
+    width: 100px;
+}
+.player-icons {
+    transition: .4s;
+}
+.player-icons:active {
+    transform: scale(.9);
+
+    /*animation: movimentarPlayer;
+    animation-duration: 1s;*/
+}
+.npc-icons {
+
+    /*Invertendo Imagens*/
+    transform: scaleX(-1);
+    transition: .4s;
+
+    margin-left: 98px;
+}

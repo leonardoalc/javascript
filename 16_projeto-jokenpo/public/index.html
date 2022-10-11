@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Jokenpô</title>
+</head>
+<body>
+    <header>
+        <img src="../images/ppt.png" alt="Pedra Papel Tesoura">
+    </header>
+    <div id="container-main">
+        <div id="container-placar">
+            <p id="result-txt">Escolha um!</p>
+            <span id="player-score">0</span> x 
+            <span id="npc-score">0</span>
+        </div>
+
+        <main>
+            <div id="player-side">
+                <img src="../images/pedra.png" alt="Pedra" id="play0" class="player-icons" onclick="jogar(0)">
+                <img src="../images/papel.png" alt="Papel" id="play1" class="player-icons" onclick="jogar(1)">
+                <img src="../images/tesoura.png" alt="Tesoura" id="play2" class="player-icons" onclick="jogar(2)">
+            </div>
+            <div id="npc-side">
+                <img src="../images/pedra.png" alt="Pedra" id="npc0" class="npc-icons">
+                <img src="../images/papel.png" alt="Papel" id="npc1" class="npc-icons">
+                <img src="../images/tesoura.png" alt="Tesoura" id="npc2" class="npc-icons">
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
