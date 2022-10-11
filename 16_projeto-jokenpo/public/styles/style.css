@@ -48,7 +48,6 @@ header > img {
     height: 70px;
 }
 #container-main {
-    height: 85vh;
     max-width: 1600px;
 }
 #container-placar {
@@ -90,6 +89,8 @@ main {
     background-image: url(../../images/arena2.png);
 
     margin: 30px auto;
+
+    transition: .4s;
 }
 #player-side {
     display: grid;

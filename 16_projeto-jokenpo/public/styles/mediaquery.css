@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@media (max-width: 540px) {
+    @keyframes movimentarPlayer {
+        from {
+            margin-left: 0px;
+        }
+        to {
+            margin-left: 80px;
+        }
+    }
+    @keyframes movimentarNpc {
+        from {
+            margin-left: 70px;
+        }
+        to {
+            margin-left: 0px;
+        }
+    }
+    #container-placar {
+        width: 300px;
+        font-size: 2.1em;
+    }
+    main {
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 287px;
+        grid-gap: 50px;
+    
+        width: 350px;
+        height: 287px;
+        background-size: 350px 287px;
+    }
+    .player-icons, .npc-icons {
+        display: grid;
+        grid-gap: 30px;
+
+        height: 60px;
+        width: 60px;
+    }
+    .npc-icons {
+        margin-left: 88px;
+    }
+}
