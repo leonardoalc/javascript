@@ -92,15 +92,14 @@ main {
 
     transition: .4s;
 }
-#player-side {
-    display: grid;
-    grid-gap: 50px;
-}
-#npc-side {
+#player-side, #npc-side {
     display: grid;
     grid-gap: 50px;
 }
 .player-icons, .npc-icons {
+    display: grid;
+    grid-gap: 50px;
+    
     height: 100px;
     width: 100px;
 }
