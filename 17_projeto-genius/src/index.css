@@ -22,8 +22,9 @@ body {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-color: aqua;
     position: relative;
+
+    transition: .4s;
 }
 #top-left {
     background-color: darkgreen;
@@ -33,6 +34,8 @@ body {
     border-top-left-radius: 100%;
     border: 5px solid black;
     box-sizing: border-box;
+
+    transition: .4s;
 }
 #top-right {
     background-color: darkred;
@@ -46,6 +49,8 @@ body {
     position: absolute;
     top: 0%;
     left: 50%;
+
+    transition: .4s;
 }
 #bottom-left {
     background-color: darkgoldenrod;
@@ -59,6 +64,7 @@ body {
     position: absolute;
     top: 50%;
 
+    transition: .4s;
 }
 #bottom-right {
     background-color: darkblue;
@@ -72,6 +78,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+
+    transition: .4s;
 }
 
 /* !!! CONFIGURAÇÕES DO CIRCULO CENTRAL !!! */
@@ -92,6 +100,8 @@ body {
     box-sizing: border-box;
 
     color: white;
+
+    transition: .4s;
 }
 #title {
     position: absolute;
@@ -165,3 +175,85 @@ body {
     margin-left: 86px;
     margin-top: 200px;
 } 
+/* !!!! MEDIA QUERY !!!! */
+@media (max-width: 550px) {
+    #circle {
+        width: 300px;
+        height: 300px;
+    }
+    #top-left {
+        width: 150px;
+        height: 150px;
+    }
+    #top-right {
+        width: 150px;
+        height: 150px;
+    }
+    #bottom-left {
+        width: 150px;
+        height: 150px;
+    }
+    #bottom-right {
+        width: 150px;
+        height: 150px;
+    }
+    /* !!! CONFIGURAÇÕES DO CIRCULO CENTRAL !!! */
+    #circle-2 {
+        width: 150px;
+        height: 150px;
+    }
+    #title {
+        font-size: 15px;
+        margin-left: 40px;
+        margin-top: 35px;
+    }
+    #start {
+        width: 40px;
+        height: 20px;
+
+        font-size: .65em;
+    }
+    #start:active {
+        box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.39);
+        font-size: .6em;
+    }
+    #power {
+        left: -51%;
+
+        width: 10px;
+    }
+    #strict {
+        left: 130%;
+
+        width: 10px;
+    }
+    #text1 {
+        top: 61%;
+        left: 10%;
+
+        font-size: 10px;
+    }
+    #text1 span:last-child {
+        padding-left: 35px;
+    }
+    #turn {
+        display: flex;
+
+        align-items: center;
+        justify-content: end;
+
+        font-size: 10px;
+
+        height: 15px;
+        width: 30px;
+
+        margin-left: 53px;
+        margin-top: 100px;
+    }
+    #text2 {
+        margin-left: 51px;
+        margin-top: 116px;
+
+        font-size: 10px;
+    } 
+}
