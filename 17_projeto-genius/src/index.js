@@ -6,7 +6,7 @@ let acerto
 let compTurn
 let intervalId
 let strict = false
-let noise = true
+let som = true
 let power = false
 let win
 
@@ -84,35 +84,35 @@ function gameTurn() {
     }
 }
 function one() {
-    if (noise) {
+    if (som) {
         let audio = document.getElementById("clip1")
         audio.play()
     }
-    noise = true
+    som = true
     topLeft.style.backgroundColor = "lightgreen"
 }
 function two() {
-    if (noise) {
+    if (som) {
         let audio = document.getElementById("clip2")
         audio.play()
     }
-    noise = true
+    som = true
     topRight.style.backgroundColor = "tomato"
 }
 function three() {
-    if (noise) {
+    if (som) {
         let audio = document.getElementById("clip3")
         audio.play()
     }
-    noise = true
+    som = true
     bottomLeft.style.backgroundColor = "yellow"
 }
 function four() {
-    if (noise) {
+    if (som) {
         let audio = document.getElementById("clip4")
         audio.play()
     }
-    noise = true
+    som = true
     bottomRight.style.backgroundColor = "lightskyblue"
 }
 function clearColor() {
@@ -200,7 +200,7 @@ function check() {
                 intervalId = setInterval(gameTurn, 800)
             }
         }, 800);
-        noise = false
+        som = false
     }
 
     if (turn == playerOrdem.length && acerto && !win) {
