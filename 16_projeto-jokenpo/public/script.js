@@ -53,17 +53,17 @@ function jogar(ppt) {
     }
 }
 function liberarJogada() {
-    setTimeout(() => podeJogar = true, 1000)
+    setTimeout(() => podeJogar = true, 2200)
 }
 function animacao(player=null, npc=null) {
     /*animando player*/
     let icon = document.getElementById(`play${player}`)
     icon.style.animation = "movimentarPlayer"
-    icon.style.animationDuration = "1s"
+    icon.style.animationDuration = "1.5s"
 
     let icon_npc = document.getElementById(`npc${npc}`)
     icon_npc.style.animation = "movimentarNpc"
-    icon_npc.style.animationDuration = "1s"
+    icon_npc.style.animationDuration = "1.5s"
 
     setTimeout(() => {
         icon.style.removeProperty("animation")
