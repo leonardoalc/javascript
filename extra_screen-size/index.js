@@ -5,4 +5,4 @@ function qualTamanho()  {
     screen.innerHTML = `${width} x ${height}`
 }
 
-qualTamanho()
+setInterval(qualTamanho, 500)
